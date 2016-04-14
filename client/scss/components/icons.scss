@@ -1,0 +1,37 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+
+  &_shifted_3px {
+    margin-left: 3px;
+  }
+
+  &_inline{
+    margin-top: -3px;
+  }
+
+  &_arrow-red-small-left{
+    @include sprite($sprite-icon-arrow-red_small-left);
+  }
+
+  &_arrow-red-small-right{
+    @include sprite($sprite-icon-arrow-red_small-right);
+  }
+
+  &_pie-small-black{
+    @include sprite($sprite-icon-pie-small-black);
+  }
+
+  &_photo-small{
+    @include sprite($sprite-icon-photo-small);
+  }
+
+  &_media-small{
+    @include sprite($sprite-icon-media-small);
+  }
+
+  &_read-more{
+    @include sprite($sprite-icon-read-more);
+  }
+}

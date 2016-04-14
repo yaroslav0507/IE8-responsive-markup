@@ -1,0 +1,68 @@
+// Here
+.review-slider{
+  @include make-column(12);
+  float: left;
+  position: relative;
+  margin: 9px 0;
+  height: $reviewSliderHeight;
+  border-bottom: 2px solid;
+
+  .control{
+    position: absolute;
+    top: 0;
+    bottom: 9px;
+    margin: auto;
+    @include cursor-on-hover;
+    &:hover{
+      @include opacity(0.8);
+    }
+
+    &_left{
+      left: 17px;
+      @include sprite($sprite-icon-arrow-red-left)
+    }
+
+    &_right{
+      right: 20px;
+      @include sprite($sprite-icon-arrow-red-right)
+    }
+  }
+
+  &__list{
+    @include clearfix;
+    position: relative;
+    overflow: hidden;
+    margin-top: 9px;
+    padding: 0 82px;
+
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      width: $reviewSliderGutters;
+      height: 100%;
+      top: 0;
+      display: block;
+      @include sprite($sprite-review-slider-fade);
+    }
+
+    &:before{
+      left: 0;
+    }
+
+    &:after{
+      right: 0;
+    }
+  }
+
+  &__wrap{
+    white-space: nowrap;
+  }
+
+  @include tablet {
+    @include make-column(12);
+  }
+
+  @include desktop {
+
+  }
+}

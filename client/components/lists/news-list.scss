@@ -1,0 +1,17 @@
+.news-list{
+  font-size: 13px;
+  line-height: 1.95em;
+  letter-spacing: .2px;
+  margin-bottom: 32px;
+
+  &__item{
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 8px;
+    line-height: 1.4em;
+  }
+
+  &__photo-item{
+    @include clearfix;
+  }
+}

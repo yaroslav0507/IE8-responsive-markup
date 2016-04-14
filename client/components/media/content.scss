@@ -1,0 +1,12 @@
+.content {
+  @include make-column(8);
+
+  @include phone {
+    @include make-column(12);
+  }
+
+  @include tablet {
+    @include make-column(12);
+  }
+
+}

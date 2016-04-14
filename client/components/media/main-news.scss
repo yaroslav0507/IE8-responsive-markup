@@ -1,0 +1,31 @@
+.main-news{
+  @extend .row;
+
+  &__item{
+    @include phone {
+      @include make-column(6);
+      height: 160px;
+      overflow: hidden;
+      padding-bottom: 10px;
+      text-align: center;
+
+      .list-item-preview{
+        float: none;
+        display: inline-block;
+      }
+    }
+
+    @include tablet {
+      @include make-column(3);
+
+      .list-item-preview{
+        width: 100%;
+      }
+    }
+
+    @include desktop {
+      @include make-column(3);
+    }
+  }
+
+}

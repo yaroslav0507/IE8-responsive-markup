@@ -1,0 +1,44 @@
+@mixin make-column($columns) {
+  position: relative;
+  float: left;
+  width: percentage(($columns / $gridColumns));
+  padding: 0 10px;
+}
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin cursor-on-hover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin opacity($opacity) {
+  //opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin phone {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

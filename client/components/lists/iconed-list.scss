@@ -1,0 +1,48 @@
+.iconed-list{
+  &__item{
+    @include clearfix;
+    position: relative;
+
+    &_video{
+      margin-bottom: 5.5px;
+    }
+
+    &_small{
+      margin-bottom: 20px;
+      height: 66px;
+    }
+  }
+
+  &_vertical{
+    @include clearfix;
+    margin-bottom: 7px;
+
+    @include phone {
+      .iconed-list__item{
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @include tablet {
+      .iconed-list__item{
+        @include make-column(4);
+        text-align: center;
+
+        .list-item {
+          &-preview,
+          &-title{
+            float: none;
+            display: inline-block;
+            padding: 0;
+          }
+        }
+
+        &_small{
+          height: auto;
+        }
+      }
+    }
+  }
+}

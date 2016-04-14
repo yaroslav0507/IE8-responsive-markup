@@ -1,0 +1,22 @@
+{
+  "name": "App",
+  "description": "app build with z.js",
+  "main": "index.js",
+  "authors": [
+    "Yaroslav Zaklinskyi"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/yaroslav0507/z.js",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2"
+  }
+}

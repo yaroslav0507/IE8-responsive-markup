@@ -1,0 +1,23 @@
+.menu{
+  @include clearfix;
+  background-color: $brandLightGrey;
+  display: block;
+  font-size: 0;
+  margin-bottom: 22px;
+  width: 100%;
+
+  &__item{
+    color: #333333;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 6px 11px;
+    
+    &_active{
+      color: #fff;
+      background-color: $brandDarkGrey;
+      padding: 6px 16px;
+    }
+  }
+}

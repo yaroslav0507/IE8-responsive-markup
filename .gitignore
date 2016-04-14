@@ -1,0 +1,5 @@
+node_modules
+client/vendors
+.release
+.idea
+dist

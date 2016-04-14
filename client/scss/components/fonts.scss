@@ -1,0 +1,30 @@
+$MinionProRegular: "./fonts/MinionPro/MinionPro-Regular";
+$PTSansBold: "./fonts/PT_Sans/PTSans-Bold";
+$PTSansRegular: "./fonts/PT_Sans/PTSans-Regular";
+
+@font-face {
+  font-family: 'MinionPro';
+  src: url($MinionProRegular + '.woff') format('woff'),
+  url($MinionProRegular + '.otf') format('otf'),
+  url($MinionProRegular + '.ttf')  format('truetype'),
+  url($MinionProRegular + '.svg#svgFontName') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url($PTSansRegular + ".eot");
+  src: url($PTSansRegular + '.woff') format('woff'),
+  url($PTSansRegular + '.ttf')  format('truetype'),
+  url($PTSansRegular + '.svg#svgFontName') format('svg');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url($PTSansBold + ".eot");
+  src: url($PTSansBold + '.woff') format('woff'),
+  url($PTSansBold + '.ttf')  format('truetype'),
+  url($PTSansBold + '.svg#svgFontName') format('svg');
+  font-weight: 700;
+}

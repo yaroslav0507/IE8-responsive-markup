@@ -1,0 +1,44 @@
+.list-item{
+  &-preview{
+    position: relative;
+    width: 140px;
+    float: left;
+    img{ width: 100%; }
+
+    &_small{
+      width: 102px
+    }
+
+    &_video {
+      &:before{
+        content: '';
+        display: block;
+        @include sprite($sprite-icon-video-play);
+        position: absolute;
+        top: 66px;
+        left: 4px;
+      }
+    }
+  }
+
+  &-title{
+    width: 160px;
+    padding-left: 11px;
+    line-height: 1.25em;
+    float: left;
+    font-size: 14px;
+
+    &_vertical{
+      padding-left: 0;
+      width: 100%;
+    }
+
+    &_regular{
+      font-size: 18px;
+      letter-spacing: -0.5px;
+      width: 188px;
+      line-height: 1.16em;
+      padding-left: 8px;
+    }
+  }
+}
